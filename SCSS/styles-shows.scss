@@ -1,0 +1,85 @@
+// Reset de márgenes y rellenos
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+// Variables globales
+$background-color: #e1e1e0;
+$navbar-color: #000000;
+$secondary-color: #ffffff;
+$font-family: 'Ubuntu', sans-serif;
+$link-color: #1e90ff;
+$link-hover-color: scale-color($link-color, $lightness: -10%);
+$btn-primary-color: #ff5c00; 
+$btn-secondary-color: #888; 
+
+// Mixin para estilos de botones
+@mixin button-styles($background-color, $text-color) {
+  background-color: $background-color !important;
+  color: $text-color;
+  border: none;
+}
+
+// Estilos Globales
+body {
+  font-family: $font-family;
+  background-color: $background-color !important;
+  color: $secondary-color !important; // Texto en blanco
+}
+
+// Navbar Styles
+nav.custom-navbar {
+  background-color: $navbar-color !important;
+
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $secondary-color !important;
+      &:hover {
+        color: $link-hover-color !important;
+      }
+    }
+  }
+}
+
+// Estilos para la tabla de shows
+.shows-table {
+  background-color: transparent !important;
+  color: $secondary-color;
+  font-size: 1.1rem;
+
+  th, td {
+    color: $secondary-color;
+    border-bottom: 1px solid $secondary-color;
+  }
+
+  .btn-primary {
+    @include button-styles($btn-primary-color, $secondary-color);
+  }
+
+  .btn-secondary {
+    @include button-styles($btn-secondary-color, $secondary-color);
+  }
+}
+
+// Footer Styles
+footer.custom-footer {
+  background-color: $navbar-color !important;
+
+  p, a {
+    color: $secondary-color !important;
+  }
+
+  .list-inline-item {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

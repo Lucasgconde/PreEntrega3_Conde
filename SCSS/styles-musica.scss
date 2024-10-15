@@ -1,0 +1,148 @@
+// Animación para la aparición de los álbumes
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Reset de márgenes y rellenos
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+// Variables globales
+$background-color: #e1e1e0;
+$navbar-color: #000000;
+$secondary-color: #ffffff;
+$font-family: 'Ubuntu', sans-serif;
+$link-color: #1e90ff;
+$link-hover-color: scale-color($link-color, $lightness: -10%);
+
+// Mixin para enlaces
+@mixin link-styles($color, $hover-color) {
+  color: $color;
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+// Estilos Globales
+body {
+  font-family: $font-family;
+  background-color: $background-color !important;
+  color: $secondary-color !important;
+}
+
+// Navbar 
+nav.custom-navbar {
+  width: 100%;
+  background-color: $navbar-color !important;
+
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        @include link-styles($secondary-color, $link-hover-color);
+      }
+    }
+  }
+}
+
+// Main Styles
+main {
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: $secondary-color;
+    margin-bottom: 2rem;
+  }
+
+  // Estilos para las tarjetas de los álbumes
+  .album-card {
+    background-color: $navbar-color;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+    padding: 1rem;
+    color: $secondary-color;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .album-title {
+      font-size: 1.2rem;
+      color: $secondary-color;
+    }
+
+    .album-year {
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    .album-icons {
+      margin-top: 10px;
+      
+      a {
+        margin-right: 10px;
+
+        img {
+          width: 40px; 
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+// Footer (igual que en index y galería)
+footer.custom-footer {
+  background-color: $navbar-color !important;
+  padding: 1.5rem 0;
+
+  p {
+    color: $secondary-color !important;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .list-inline {
+    .list-inline-item {
+      margin-right: 1rem;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .Redes {
+      @include link-styles($link-color, $link-hover-color);
+    }
+  }
+
+  .mt-3 {
+    color: $secondary-color !important;
+  }
+}

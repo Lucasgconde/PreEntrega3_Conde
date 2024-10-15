@@ -1,0 +1,84 @@
+// Reset de márgenes y rellenos
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+// Variables
+$navbar-color: #000;
+$secondary-color: #fff;
+$link-color: #1e90ff;
+$link-hover-color: scale-color($link-color, $lightness: -10%);
+$font-family-title: 'Oswald', sans-serif;
+
+// Mixin para estilos de enlaces
+@mixin link-styles($color, $hover-color) {
+  color: $color;
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+// Navbar Styles
+nav.custom-navbar {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background-color: $navbar-color !important;
+
+  .navbar-brand {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        @include link-styles($secondary-color, $link-hover-color);
+      }
+    }
+  }
+}
+
+// Título de página
+h1 {
+  font-family: $font-family-title;
+}
+
+// Footer Styles
+footer.custom-footer {
+  background-color: $navbar-color !important;
+  padding: 1.5rem 0;
+
+  p {
+    color: $secondary-color !important;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .list-inline {
+    .list-inline-item {
+      margin-right: 1rem;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .Redes {
+      @include link-styles($link-color, $link-hover-color);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .mt-3 {
+    margin-top: 1rem;
+    color: $secondary-color !important;
+  }
+}

@@ -1,0 +1,58 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #e1e1e0 !important;
+  color: #ffffff !important;
+}
+
+nav.custom-navbar {
+  background-color: #000000 !important;
+}
+nav.custom-navbar .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+nav.custom-navbar .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+nav.custom-navbar .navbar-nav .nav-link:hover {
+  color: rgb(1.5, 129.94, 255) !important;
+}
+
+.shows-table {
+  background-color: transparent !important;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+.shows-table th, .shows-table td {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.shows-table .btn-primary {
+  background-color: #ff5c00 !important;
+  color: #ffffff;
+  border: none;
+}
+.shows-table .btn-secondary {
+  background-color: #888 !important;
+  color: #ffffff;
+  border: none;
+}
+
+footer.custom-footer {
+  background-color: #000000 !important;
+}
+footer.custom-footer p, footer.custom-footer a {
+  color: #ffffff !important;
+}
+footer.custom-footer .list-inline-item img {
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=styles-shows.css.map */

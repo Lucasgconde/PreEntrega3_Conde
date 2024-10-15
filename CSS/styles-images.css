@@ -1,0 +1,58 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+nav.custom-navbar {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background-color: #000 !important;
+}
+nav.custom-navbar .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+nav.custom-navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+nav.custom-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(1.5, 129.94, 255);
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+footer.custom-footer {
+  background-color: #000 !important;
+  padding: 1.5rem 0;
+}
+footer.custom-footer p {
+  color: #fff !important;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+footer.custom-footer .list-inline .list-inline-item {
+  margin-right: 1rem;
+}
+footer.custom-footer .list-inline .list-inline-item img {
+  width: 30px;
+  height: 30px;
+}
+footer.custom-footer .list-inline .Redes {
+  color: #1e90ff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+footer.custom-footer .list-inline .Redes:hover {
+  color: rgb(1.5, 129.94, 255);
+}
+footer.custom-footer .mt-3 {
+  margin-top: 1rem;
+  color: #fff !important;
+}
+
+/*# sourceMappingURL=styles-images.css.map */

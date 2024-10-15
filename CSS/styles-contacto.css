@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #e1e1e0 !important;
+  color: #000;
+}
+
+nav.custom-navbar {
+  width: 100%;
+  background-color: #000 !important;
+}
+nav.custom-navbar .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+nav.custom-navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+nav.custom-navbar .navbar-nav .nav-link:hover {
+  color: rgb(1.5, 129.94, 255);
+}
+
+form .form-control {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+form label {
+  font-weight: 600;
+  color: #000;
+}
+form button {
+  padding: 0.7rem 2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+form button.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+form button.btn-primary:hover {
+  background-color: #0056b3;
+}
+form button.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+form button.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+footer.custom-footer {
+  background-color: #000 !important;
+  padding: 1.5rem 0;
+}
+footer.custom-footer p {
+  color: #fff !important;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+footer.custom-footer .list-inline .list-inline-item {
+  margin-right: 1rem;
+}
+footer.custom-footer .list-inline .list-inline-item img {
+  width: 30px;
+  height: 30px;
+}
+footer.custom-footer .list-inline .Redes {
+  color: #1e90ff;
+}
+footer.custom-footer .list-inline .Redes:hover {
+  color: rgb(1.5, 129.94, 255);
+}
+footer.custom-footer .mt-3 {
+  color: #fff !important;
+}
+
+/*# sourceMappingURL=styles-contacto.css.map */

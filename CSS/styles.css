@@ -1,0 +1,100 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #e1e1e0 !important;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+nav.custom-navbar {
+  width: 100%;
+  background-color: #000 !important;
+}
+nav.custom-navbar .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+nav.custom-navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+nav.custom-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(1.5, 129.94, 255);
+}
+
+main {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+main h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+main p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #000;
+}
+main .lead {
+  font-weight: 300;
+}
+main .carousel {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+main .container {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer.custom-footer {
+  background-color: #000 !important;
+  padding: 1.5rem 0;
+  margin-top: 0 !important;
+}
+footer.custom-footer p {
+  color: #fff !important;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+footer.custom-footer .list-inline .list-inline-item {
+  margin-right: 1rem;
+}
+footer.custom-footer .list-inline .list-inline-item img {
+  width: 30px;
+  height: 30px;
+}
+footer.custom-footer .list-inline .Redes {
+  color: #1e90ff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+footer.custom-footer .list-inline .Redes:hover {
+  color: rgb(1.5, 129.94, 255);
+}
+footer.custom-footer .mt-3 {
+  margin-top: 1rem;
+  color: #fff !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
